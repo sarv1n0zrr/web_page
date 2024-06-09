@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="login.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo">Haagen-Dazs</a>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- Header End -->
+    <div class="container">
+      <div class="login-box">
+        <h1>Login</h1>
+        <form>
+          <div class="textbox">
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="textbox">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              id="password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn" id="submit">Login</button>
+        </form>
+        <p class="info">
+          Don't have an account? <a href="register.html">Register here</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

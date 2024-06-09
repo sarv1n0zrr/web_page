@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ff9bb2;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff9bb2;
+}
+
+.login-box {
+  width: 80%;
+  max-width: 400px;
+  padding: 40px;
+  position: relative;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 15px 25px rgba(232, 232, 232, 0.1);
+  border-radius: 10px;
+}
+
+.login-box h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.textbox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 10px;
+  background: #f2f2f2;
+  border: none;
+  outline: none;
+  color: #333;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  background: #ff9bb2;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #ff9bb2;
+}
+
+.info {
+  margin-top: 20px;
+  color: #666;
+}
+
+.info a {
+  color: #ff9bb2;
+  text-decoration: none;
+}
+
+/* Mobile: 360x640 */
+@media (max-width: 360px) {
+  .login-box {
+    padding: 20px;
+  }
+
+  .login-box h1 {
+    font-size: 20px;
+  }
+
+  .textbox input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+}
+
+/* Tablet: 768x1024 */
+@media (min-width: 361px) and (max-width: 768px) {
+  .login-box {
+    width: 70%;
+    padding: 30px;
+  }
+
+  .login-box h1 {
+    font-size: 22px;
+  }
+
+  .textbox input {
+    font-size: 15px;
+    padding: 9px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 9px;
+  }
+
+  .info {
+    font-size: 14px;
+  }
+}
+
+/* Desktop: 1920x1080 */
+@media (min-width: 769px) {
+  .login-box {
+    width: 60%;
+    max-width: 400px;
+    padding: 40px;
+  }
+
+  .login-box h1 {
+    font-size: 24px;
+  }
+
+  .textbox input {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .info {
+    font-size: 16px;
+  }
+}
