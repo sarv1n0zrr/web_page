@@ -6,25 +6,18 @@
     <link rel="stylesheet" href="style.css" />
     <title>WEB GOS</title>
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <a href="#" class="logo">Haagen-Dazs</a>
+      <a href="#" class="logo">LOGO</a>
       <ul class="navbar">
         <li><a href="#home">Home</a></li>
         <li><a href="#tabs">Tabs</a></li>
@@ -38,20 +31,11 @@
     <!-- Landing Page -->
     <section class="home" id="home">
       <div class="home-text">
-        <h1>
-          Welcome to <br />
-          Kazakstan
-        </h1>
+        <h1>Welcome to <br />Kazakstan</h1>
         <h5>We are ready to help you!</h5>
-
-        <div class="social">
-          <a href="#"></a>
-        </div>
-
         <div class="button">
           <button onclick="openPopup()">Learn More</button>
         </div>
-
         <div class="button">
           <button onclick="myFunction()">Dark mode</button>
         </div>
@@ -75,9 +59,14 @@
     <!-- Modal Window -->
     <div class="modalwindow">
       <div class="popup" id="popup">
-        <img src="404-tick.png" height="100" />
-        <h2>Thank You!</h2>
-        <p>Your details has been succesfuly submitted.Thanks!</p>
+        <h2>About Us!</h2>
+        <p>
+          We are glad to see you here! If you want to learn more about our
+          company, feel free to reach out to us at
+          <a href="mailto:email@example.com">email@example.com</a>. We're always
+          happy to connect and provide more information about our services and
+          mission.
+        </p>
         <button type="button" onclick="closePopup()">Ok</button>
       </div>
     </div>
@@ -129,8 +118,8 @@
     </div>
     <!-- Tabs End -->
 
-    <!-- Application Form  -->
-    <section class="newsletter" id="form">
+    <!-- Application Form -->
+    <section class="newsletter-all" id="form">
       <main class="newsletter-coloumn1">
         <h1>Lorem, ipsum dolor.</h1>
         <p>
@@ -140,14 +129,24 @@
         </p>
       </main>
       <main class="newsletter-coloumn2">
-        <p>Lorem ipsum dolor sit.</p>
-        <form>
-          <input type="text" placeholder="your.email@gmail.com" />
-          <button class="join-btn">Join</button>
+        <form action="" id="contactForm">
+          <div class="alert">Feel free to ask!</div>
+          <div class="inputBox">
+            <input type="text" id="name" placeholder="Your name...." />
+          </div>
+          <div class="inputBox">
+            <input type="email" id="emailid" placeholder="Your Email....." />
+          </div>
+          <div class="inputBox">
+            <input type="text" placeholder="Message" id="msgContent" />
+          </div>
+          <div class="inputBox">
+            <button type="submit" id="submit">Submit</button>
+          </div>
         </form>
       </main>
     </section>
-    <!-- Application Form End  -->
+    <!-- Application Form End -->
 
     <!-- Footer -->
     <div class="end-content">
@@ -162,6 +161,7 @@
 
     <!-- Java -->
     <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <!-- Java End -->
   </body>
 </html>
